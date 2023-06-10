@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(180deg, #262a56, #000);
+}
+
+header {
+    height: 150px;
+    background-color: cadetblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+p {
+    color: greenyellow;
+}
+
+.edu {
+    color: greenyellow;
+    text-align: center;
+}
+
+.goals {
+    color: greenyellow;
+    text-align: center;
+}
+
+.skills {
+    color: greenyellow;
+    /* grid-column: span 2; */
+    text-align: center;
+    grid-area: 2/1/2/2;
+}
+
+a {
+    color: greenyellow;
+}
+
+footer {
+    color: #C2DEDC;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 2fr; */
+    gap: 50px;
+    margin-left: 10%;
+}
+
+#container>div {
+    background: linear-gradient(90deg, #FFD95A, #FFF7D4);
+    color: black;
+    width: 500px;
+    border-radius: 20px;
+}
+
+#site {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+@media (min-width: 319px) and (max-width: 1200px){
+    #container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+}
